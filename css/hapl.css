@@ -23,6 +23,14 @@
      min-height: 100%;
  }
 
+ .container
+ {
+    /*Using this to widen the navbar. WIDENING*/
+    width: auto;
+    padding-left: 0;
+    padding-right: 0;
+ }
+
 .form-control::-moz-placeholder{
    color: #DDDDDD;
    opacity: 1;
@@ -364,6 +372,17 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
     -webkit-transition: all 0.4s;
     font-size: 16px;
 }
+
+.navbar-style
+{
+    /*border-radius: 25px;*/
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    opacity: 96%;
+}
+
 .navbar-default {
     background-color: #D9D9D9;
     
@@ -397,7 +416,7 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 .navbar-transparent{
-    padding-top: 15px;
+    /*padding-top: 15px;*/ /*Pushing it to the top*/
     background-color: rgba(0,0,0,.0);
 }
 .navbar-transparent .navbar-brand, [class*="navbar-ct"] .navbar-brand{
@@ -570,7 +589,7 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
         border-radius: 10px;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
-        box-sizing: border-box;
+        /*box-sizing: border-box;*/ /*commented this out to widen navbar bars WIDENING*/
         opacity: 0;
         -ms-filter: "alpha(opacity=0)";
         -webkit-filter: alpha(opacity=0);
@@ -670,7 +689,7 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
 
 
 .main{
-    background-color: rgb(41, 41, 41);
+    background-color: rgb(71, 71, 71);
     background-position: center center;
     background-size: cover;
     height: auto;
@@ -751,6 +770,10 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
 .main .content{
     position: relative;
     z-index: 4;
+
+    /*WIDENING*/
+    margin-left: 10%;
+    margin-right: 10%;
 }
 .main .motto{
     min-height: 140px;
